@@ -1,0 +1,29 @@
+<form action="" xmlns="http://www.w3.org/1999/html">
+    <h3>form Mahasiswa Mengajukan Izin</h3>
+    <div class="form-group">
+        <label for="category">Jenis Izin</label>
+        <select id="category" cam-variable-name="category" cam-variable-type="String">
+            <option value="keperluan pribadi">Keperluan Pribadi</option>
+            <option value="sakit">Sakit</option>
+            <option value="lainnya">Lainnya</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="purchaseDate">Tanggal Izin</label>
+        <input type="date" id="purchaseDate" cam-variable-name="purchaseDate" cam-variable-type="String">
+    </div>
+
+    <div>
+        <label for="description">Deskripsi</label>
+        <textarea id="description" cam-variable-name="description" cam-variable-type="String"></textarea>
+    </div>
+
+
+
+    <script com-script= type type="text/form-script">
+        $scope.open = function($event) {
+        $event.preventDefault();
+        $event.stopPropaganation();
+        $scope.dateFieldOpened = true;
+    </script>

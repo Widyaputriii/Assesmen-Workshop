@@ -1,0 +1,36 @@
+<form name="izinmahasiswaForm" id="izinmahasiswaForm">
+  <h3>Mahasiswa Mengajukan Izin</h3>
+
+
+  <div class="form-group">
+    <label for="category">Jenis Izin</label>
+    <select id="category" cam-variable-name="category" cam-variable-type="String" disabled>
+      <option value="keperluan pribadi">Keperluan Pribadi</option>
+      <option value="sakit">Sakit</option>
+      <option value="lainnya">Lainnya</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="purchaseDate">Tanggal Izin</label>
+    <input type="date" id="purchaseDate" cam-variable-name="purchaseDate" cam-variable-type="String"readonly>
+  </div>
+
+  <div>
+    <label for="description">Deskripsi</label>
+    <textarea id="description" cam-variable-name="description" cam-variable-type="String"readonly></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="isApproved">Apakah pengajuan Izin disetujui?</label>
+    <select id="isApproved" cam-variable-name="isApproved" cam-variable-type="String" >
+      <option value="setuju">Setuju</option>
+      <option value="tolak">Tolak</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="remark">Catatan</label>
+    <textarea id="remark" cam-variable-name="approvalRemark" cam-variable-type="String"></textarea>
+  </div>
+</form>
